@@ -6,10 +6,11 @@
   </head>
   <body>
     <header class="page-header">
+    
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -106,8 +107,12 @@
 
               <fieldset class="sedona-filter-group">
                 <legend class="sedona-filter-title">Стоимость, ₽:</legend>
-                <input class="sedona-filter-input" type="number" name="min-price" placeholder="от"> 
-                <input class="sedona-filter-input" type="number" name="max-price" placeholder="до"> 
+                <label class="visually-hidden">Цена от
+                    <input class="sedona-filter-input" type="number" name="min-price" placeholder="от"> 
+                </label>
+                <label class="visually-hidden">Цена до
+                    <input class="sedona-filter-input" type="number" name="max-price" placeholder="до"> 
+                </label>
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
